@@ -34,6 +34,7 @@ typedef enum {
     MenuStyleC64,
     MenuStyleEurocorp,
     MenuStyleCompact,
+    MenuStyleTerminal,
     MenuStyleCount,
 } MenuStyle;
 
@@ -91,7 +92,7 @@ typedef struct {
 
 void XTREME_SETTINGS_LOAD();
 void XTREME_SETTINGS_SAVE();
-XtremeSettings* XTREME_SETTINGS();
+extern XtremeSettings xtreme_settings;
 
 void XTREME_ASSETS_LOAD();
 void XTREME_ASSETS_FREE();
